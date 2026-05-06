@@ -15,6 +15,7 @@ public class LoginPage {
     By username = By.xpath("//input[@id='user-name']");
     By password = By.xpath("//input[@id='password']");
     By login = By.xpath("//input[@id='login-button']");
+    By errorMessage = By.cssSelector("h3[data-test='error']");
 
 
     public void enterUsername(String user) {
@@ -26,6 +27,9 @@ public class LoginPage {
 
     public void clickLoginbtn() {
         driver.findElement(login).click();
+    }
+    public String getErrorMessage() {
+        return driver.findElement(errorMessage).getText();
     }
 }
 

@@ -11,7 +11,7 @@ import pages.ProductPage;
 public class CheckoutsTest extends BaseTest {
 
     @Test
-    public void checkoutsTest() {
+    public void SauceDemoTestSuit() {
 
         test.info("Login start");
         LoginPage loginPage = new LoginPage(driver);
